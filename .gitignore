@@ -1,0 +1,80 @@
+# ===================================================================
+# .gitignore for ASP.NET Core (.NET) projects
+# ===================================================================
+
+## Build results
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+build/
+bld/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+## .NET / Rider / VS user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.rsuser
+
+## VS Code (keep shared config, ignore local)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## Rider
+.idea/
+*.sln.iml
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+!packages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## ASP.NET scaffolding / publish
+PublishScripts/
+publish/
+*.publishsettings
+*.azurePubxml
+*.pubxml
+*.pubxml.user
+
+## Test / coverage
+[Tt]est[Rr]esult*/
+*.coverage
+*.coveragexml
+coverage/
+TestResults/
+
+## Logs & databases
+*.log
+*.db
+*.db-shm
+*.db-wal
+
+## OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+## Environment / secrets
+*.env
+appsettings.*.local.json
+secrets.json

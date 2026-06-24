@@ -13,36 +13,19 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-      public IActionResult Index() //action name/method ... home/Index
-        {
-            return View();
-        }
-        [HttpGet]
-        [Route("/about/")]
-        public IActionResult about()
-        {
-            return View();
-        }
-        //attribute based routing
-        [HttpGet]
-        [Route("/skills/")]
-        public IActionResult skills() //action name/method ... home/Index
-        {
-            return View();
-        }
-        [HttpGet]
-        [Route("/work/")]
-        public IActionResult work()
-        {
-            return View();
-        }
+    public IActionResult Index() => View();
 
-        [HttpGet]
-        [Route("/Contact_Me/")]
-        public IActionResult Contact_Me()
-        {
-            return View();
-        }
+    [HttpGet("/about")]
+    public IActionResult about() => View();
+
+    [HttpGet("/skills")]
+    public IActionResult skills() => View();
+
+    [HttpGet("/work")]
+    public IActionResult work() => View();
+
+    [HttpGet("/Contact_Me")]
+    public IActionResult Contact_Me() => View();
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
