@@ -4,13 +4,23 @@ A responsive, modern personal portfolio website built with **ASP.NET Core MVC (.
 It showcases skills, projects, and achievements with a clean, interactive UI. No database
 is required — making it lightweight, fast, and easy to deploy.
 
+[![CI](https://github.com/Umair-Habibx123/portfolio-aspnet-mvc/actions/workflows/ci.yml/badge.svg)](https://github.com/Umair-Habibx123/portfolio-aspnet-mvc/actions/workflows/ci.yml)
+[![.NET 9](https://img.shields.io/badge/.NET-9.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/download/dotnet/9.0)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
+![The home page: "Hi There, I'm Umair Habib" with resume and WhatsApp buttons](docs/screenshots/home.jpg)
+
+| Work experience | Skills |
+| --- | --- |
+| ![The Work page: a timeline starting with a Flutter development internship](docs/screenshots/work.jpg) | ![The Skills page: a grid of technology logos](docs/screenshots/skills.jpg) |
+
 ---
 
 ## Features
 
 - 🎨 **Modern UI** — gradient navbar, Poppins typography, smooth hover/scroll animations.
 - 🛠️ **Static Project Showcase** — customize project details directly in the Razor views.
-- 📬 **Contact Section** — simple contact + WhatsApp call-to-action.
+- 📬 **Contact** — a form that opens the visitor's email app with the message pre-filled (no mail server needed), plus a WhatsApp button.
 - ♿ **Accessible** — focus-visible outlines and reduced-motion support.
 - 📱 **Responsive** — built on Bootstrap 5, works across all major browsers and devices.
 
@@ -31,7 +41,7 @@ is required — making it lightweight, fast, and easy to deploy.
 ## Project Structure
 
 ```
-PortfolioASP_MVC/
+portfolio-aspnet-mvc/
 │
 ├── .vscode/                 # VS Code launch / build tasks / recommended extensions
 ├── Controllers/             # MVC controllers (routing + static data)
@@ -72,8 +82,8 @@ dotnet --version   # should print 9.x.x
 ### Clone the repository
 
 ```bash
-git clone https://github.com/Umair-Habibx123/PortfolioASP_MVC.git
-cd PortfolioASP_MVC
+git clone https://github.com/Umair-Habibx123/portfolio-aspnet-mvc.git
+cd portfolio-aspnet-mvc
 ```
 
 ---
